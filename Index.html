@@ -1,2 +1,55 @@
 <html>
-</html>
+<head>
+<link href="css.css" rel="stylesheet">
+<script type="text/javascript">
+ 
+	function n(dato){ 
+		document.getElementById("operazioni").value+=dato;
+	}
+
+	function operazione() { 
+		document.getElementById("operazioni").value=eval(document.getElementById("operazioni").value); 
+	}
+
+	function cancella() { 
+	 document.getElementById("operazioni").value=""; 
+	}
+
+</script>
+</head>
+<body>
+<div class="contenuto">
+   <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+</div>
+<div class="contenuto">
+  <div class="contenuto">
+      <input type="tastino" id="7" value="7" onclick="n(this.id)" class="tasto">
+      <input type="tastino" id="8" value="8" onclick="n(this.id)" class="tasto">
+      <input type="tastino" id="9" value="9" onclick="n(this.id)" class="tasto">
+      <input type="tastino" id="/" value="/" onclick="n(this.id)" class="tasto">
+  </div>
+  <div class="contenuto">
+      <input type="tastino" id="4" value="4" onclick="n(this.id)" class="tasto">
+      <input type="tastino" id="5" value="5" onclick="n(this.id)" class="tasto">
+      <input type="tastino" id="6" value="6" onclick="n(this.id)" class="tasto">
+      <input type="tastino" id="*" value="X" onclick="n(this.id)" class="tasto">
+  </div>
+  <div class="contenuto">
+       <input type="tastino" id="1" value="1" onclick="n(this.id)" class="tasto">
+       <input type="tastino" id="2" value="2" onclick="n(this.id)" class="tasto">
+       <input type="tastino" id="3" value="3" onclick="n(this.id)" class="tasto">
+       <input type="tastino" id="-" value="-" onclick="n(this.id)" class="tasto">
+   </div>
+   <div class="contenuto">
+      <input type="tastino" value="AC" onclick="cancella()" class="tasto">
+      <input type="tastino" id="0" value="0" onclick="n(this.id)" class="tasto">
+      <input type="tastino" id="." value="." onclick="n(this.id)" class="tasto">
+      <input type="tastino" id="+" value="+" onclick="n(this.id)" class="tasto">
+    </div>
+    <div class="contenuto">
+         <button value="=" onclick="operazione();" class="uguale tasto">=</button>
+     </div>
+ </div>
+ </body>
+ </html>
+ 
