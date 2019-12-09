@@ -1,0 +1,24 @@
+.contenuto {
+  margin-left:2px;
+}
+.tasto {
+  background-color:#FF8040;
+  color:#000000;
+  font-size:22pt;
+  border:#000000 solid 1px;
+  margin:4px 2px;
+  height:40px;
+	width:46px;
+}
+.display {
+  
+  color:#000000;
+  font-size:24pt;
+  border:#FF8040 solid 2px;
+  margin:4px 2px;
+  width:204px;
+  height:40px;            
+}
+.uguale {
+  width:208px;
+}
